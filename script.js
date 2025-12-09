@@ -20,6 +20,17 @@ fetch("deals.json")
     `).join("");
   })
 
+// Load referral links from referrals.json
+fetch("referrals.json")
+  .then(res => res.json())
+  .then(referrals => {
+    const referralList = document.getElementById("referralList");
+    referralList.innerHTML = referrals
+      .map(r => `<li><a href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a></li>`)
+      .join("");
+  })
+  .catch(err => console.error("Error loading referrals.json", err));
+
 
 const comments = JSON.parse(localStorage.getItem("comments") || "[]");
 const commentSection = document.getElementById("commentSection");
