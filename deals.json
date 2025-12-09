@@ -1,19 +1,37 @@
 [
   {
     "store": "Walmart",
-    "title": "Tide Pods are $2.47 each, must buy 2",
+    "date": "2025-12-07",
+    "title": "Tide Pods 16ct $2.47 each, must buy 2",
+    "productLink": "https://walmart.com/item/123456",
+    "image": "https://i.imgur.com/abcd1234.jpg",
     "breakdown": [
       "OOP: $13.94 = $6.97 x2 Tide Pods 16ct",
       "SwagBucks - 600 SB for 2 = $6.00",
       "Checkout 51 - $1.50 each x2 = $3.00",
-      "13.94 - 6.00 - 3.00 = $4.94/2 = <b>$2.47 each</b>"
+      "13.94-6.00-3.00 = $4.94/2 = $2.97 each"
     ],
     "notes": [
-      "Can buy 4 on the same receipt. Check to make sure you haven't redeemed it yet this month.",
-      "Same deal should exist on Tada, InboxDollars, MyPoints, and BeFrugal.",
-      "Make sure the rebate amount is the same, and you will only get one redemption on Checkout 51.",
+      "Can buy 4 on same receipt. Check to make sure you haven't redeemed it yet this month.",
+      "Same deal should exist on Tada, Inboxdollars, MyPoints, and BeFrugal. Make sure the rebate amount is the same, and you will only get one more rebate on Checkout 51.",
       "InboxDollars - $5.00 for 2",
       "Others - Same as Swagbucks"
+    ]
+  },
+  {
+    "store": "Target",
+    "date": "2025-12-05",
+    "title": "Organic Milk 2% - $3.99 per gallon",
+    "productLink": "https://target.com/p/organic-milk-2-percent",
+    "image": "https://i.imgur.com/efgh5678.jpg",
+    "breakdown": [
+      "OOP: $3.99 per gallon",
+      "Ibotta rebate: $1.00",
+      "Final price: $2.99"
+    ],
+    "notes": [
+      "Limit 3 per customer",
+      "Check Ibotta app for rebate availability"
     ]
   }
 ]
