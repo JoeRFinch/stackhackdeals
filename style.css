@@ -71,3 +71,32 @@ button:hover {
 .topnav a:hover {
   text-decoration: underline;
 }
+.deal-item {
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.deal-store {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.deal-title {
+  font-size: 1.2em;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.deal-breakdown li {
+  margin-left: 20px;
+  list-style-type: square;
+}
+
+.deal-notes li {
+  margin-left: 40px;
+  list-style-type: circle;
+  font-size: 0.9em;
+  color: #444;
+}
