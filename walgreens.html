@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Walgreens Deals - StackHack Deals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="walmart.html">Walmart</a>
+    <a href="walgreens.html" class="active">Walgreens</a>
+    <a href="gianteagle.html">Giant Eagle</a>
+  </nav>
+  <header>
+    <h1>🏥 Walgreens Deals</h1>
+  </header>
+
+  <main class="color-section green">
+    <section>
+      <h2>New Money Makers</h2>
+      <ul id="newMM"></ul>
+    </section>
+
+    <section>
+      <h2>Previous Money Makers</h2>
+      <ul id="previousMM"></ul>
+    </section>
+
+    <section>
+      <h2>New Deals</h2>
+      <ul id="newDeals"></ul>
+    </section>
+
+    <section>
+      <h2>Previous Deals</h2>
+      <ul id="previousDeals"></ul>
+    </section>
+
+    <section>
+      <h2>Possibly Expired Deals</h2>
+      <ul id="possiblyExpired"></ul>
+    </section>
+
+    <section>
+      <h2>Expired Deals</h2>
+      <ul id="expiredDeals"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 StackHack Deals</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      function filterAndSort(store, moneyMaker, status) {
+        return deals.filter(d => d.store === store && d.moneyMaker === moneyMaker && d.status === status)
+                    .sort((a,b) => b.dateAdded.localeCompare(a.dateAdded));
+      }
+
+      renderDealList(filterAndSort("Walgreens", true, 0), "newMM");
+      renderDealList(filterAndSort("Walgreens", true, 1), "previousMM");
+      renderDealList(filterAndSort("Walgreens", false, 0), "newDeals");
+      renderDealList(filterAndSort("Walgreens", false, 1), "previousDeals");
+      renderDealList(filterAndSort("Walgreens", false, 2), "possiblyExpired");
+      renderDealList(filterAndSort("Walgreens", false, 3), "expiredDeals");
+    });
+  </script>
+</body>
+</html>
