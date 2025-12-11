@@ -1,37 +1,22 @@
 [
   {
-    "store": "",
-    "date": "2025-12-07",
-    "title": "",
-    "productLink": "",
-    "image": "",
+    "store": "Walmart",
+    "title": "L'il Critters Vitamins",
+    "moneyMaker": true,
+    "status": 0,
+    "dateAdded": "2025-12-11T00:00:00.000Z",
+    "costSummary": "Buy 2 for $4.98 each ($9.96 total), get $14.56 back on BeFrugal",
     "breakdown": [
-      "",
-      ",
-      "",
-      ""
+      "Original cost: $4.98 each",
+      "Buy 2 for $9.96 total",
+      "Rebate: 5,808 points ($7.26) back on BeFrugal each, up to two per month",
+      "Effective cost: $4.56 money maker when you buy two"
     ],
     "notes": [
-      "",
-      "Same deal should exist on Tada, Inboxdollars, MyPoints, and BeFrugal. Make sure the rebate amount is the same, and you will only get one more rebate on Checkout 51.",
-      "InboxDollars - $5.00 for 2",
-      "Others - Same as Swagbucks"
-    ]
-  },
-  {
-    "store": "Target",
-    "date": "2025-12-05",
-    "title": "Organic Milk 2% - $3.99 per gallon",
-    "productLink": "https://target.com/p/organic-milk-2-percent",
-    "image": "https://i.imgur.com/efgh5678.jpg",
-    "breakdown": [
-      "OOP: $3.99 per gallon",
-      "Ibotta rebate: $1.00",
-      "Final price: $2.99"
+      "Must trade 100,000 points for $125",
+      "Lower point redemptions have a lower return percentage, e.g., 20,000 points get $25"
     ],
-    "notes": [
-      "Limit 3 per customer",
-      "Check Ibotta app for rebate availability"
-    ]
+    "productLink": "https://www.walmart.com/ip/L-il-Critters-Gummy-Vites-70-ct/10452256?classType=REGULAR&athbdg=L1100&from=/search",
+    "imageLink": "https://i5.walmartimages.com/seo/L-il-Critters-Gummy-Vites-70-ct_0a855a4f-dbca-4dd5-946a-acdc7997d853.706e75bb3e906a4a670a45e641a94229.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
   }
 ]
