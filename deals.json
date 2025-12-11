@@ -4,19 +4,15 @@
     "title": "L'il Critters Vitamins",
     "moneyMaker": true,
     "status": 0,
-    "dateAdded": "2025-12-11T00:00:00.000Z",
-    "costSummary": "Buy 2 for $4.98 each ($9.96 total), get $14.56 back on BeFrugal",
+    "dateAdded": "2025-12-11",
+    "productLink": "https://www.walmart.com/ip/L-il-Critters-Gummy-Vites-70-ct/10452256?classType=REGULAR&athbdg=L1100&from=/search",
+    "image": "https://i5.walmartimages.com/seo/L-il-Critters-Gummy-Vites-70-ct_0a855a4f-dbca-4dd5-946a-acdc7997d853.706e75bb3e906a4a670a45e641a94229.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
     "breakdown": [
-      "Original cost: $4.98 each",
-      "Buy 2 for $9.96 total",
-      "Rebate: 5,808 points ($7.26) back on BeFrugal each, up to two per month",
-      "Effective cost: $4.56 money maker when you buy two"
+      "Buy 2 for $4.98 each for $9.96 total, $14.56 back on BeFrugal",
+      "5,808 points ($7.26) back on BeFrugal each up to two per month"
     ],
     "notes": [
-      "Must trade 100,000 points for $125",
-      "Lower point redemptions have a lower return percentage, e.g., 20,000 points get $25"
-    ],
-    "productLink": "https://www.walmart.com/ip/L-il-Critters-Gummy-Vites-70-ct/10452256?classType=REGULAR&athbdg=L1100&from=/search",
-    "imageLink": "https://i5.walmartimages.com/seo/L-il-Critters-Gummy-Vites-70-ct_0a855a4f-dbca-4dd5-946a-acdc7997d853.706e75bb3e906a4a670a45e641a94229.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+      "Must trade 100,000 points for $125. Lower point redemptions have a lower return percentage like 20,000 points = $25."
+    ]
   }
 ]
