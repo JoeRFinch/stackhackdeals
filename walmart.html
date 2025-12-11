@@ -9,65 +9,65 @@
 <body>
   <nav class="topnav">
     <a href="index.html">Home</a>
-    <a href="walmart.html" class="active">Walmart</a>
-    <a href="walgreens.html">Walgreens</a>
-    <a href="gianteagle.html">Giant Eagle</a>
+    <a href="#deals">Deals</a>
+    <a href="#referrals">Referrals</a>
+    <a href="#tips">Tips</a>
+    <a href="#howto">How-Tos</a>
+    <a href="#qa">Q&A</a>
   </nav>
+
   <header>
     <h1>🛒 Walmart Deals</h1>
   </header>
 
-  <main class="color-section green">
-    <section>
-      <h2>New Money Makers</h2>
-      <ul id="newMM"></ul>
-    </section>
-
-    <section>
-      <h2>Previous Money Makers</h2>
-      <ul id="previousMM"></ul>
-    </section>
-
-    <section>
-      <h2>New Deals</h2>
-      <ul id="newDeals"></ul>
-    </section>
-
-    <section>
-      <h2>Previous Deals</h2>
-      <ul id="previousDeals"></ul>
-    </section>
-
-    <section>
-      <h2>Possibly Expired Deals</h2>
-      <ul id="possiblyExpired"></ul>
-    </section>
-
-    <section>
-      <h2>Expired Deals</h2>
-      <ul id="expiredDeals"></ul>
-    </section>
-  </main>
+  <section id="walmartDeals" class="color-section green">
+    <h2>All Walmart Deals</h2>
+    <ul id="storeDealList"></ul>
+  </section>
 
   <footer>
     <p>© 2025 StackHack Deals</p>
   </footer>
 
-  <script src="script.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      function filterAndSort(store, moneyMaker, status) {
-        return deals.filter(d => d.store === store && d.moneyMaker === moneyMaker && d.status === status)
-                    .sort((a,b) => b.dateAdded.localeCompare(a.dateAdded));
-      }
+    // Load deals.json and filter Walmart deals, render with full info
 
-      renderDealList(filterAndSort("Walmart", true, 0), "newMM");
-      renderDealList(filterAndSort("Walmart", true, 1), "previousMM");
-      renderDealList(filterAndSort("Walmart", false, 0), "newDeals");
-      renderDealList(filterAndSort("Walmart", false, 1), "previousDeals");
-      renderDealList(filterAndSort("Walmart", false, 2), "possiblyExpired");
-      renderDealList(filterAndSort("Walmart", false, 3), "expiredDeals");
-    });
+    fetch('deals.json')
+      .then(res => res.json())
+      .then(deals => {
+        const walmartDeals = deals.filter(d => d.store.toLowerCase() === 'walmart');
+
+        const list = document.getElementById('storeDealList');
+
+        if (walmartDeals.length === 0) {
+          list.innerHTML = '<li>No Walmart deals found.</li>';
+          return;
+        }
+
+        list.innerHTML = walmartDeals.map(d => `
+          <li class="deal-item">
+            <div class="deal-title" style="font-weight: bold; font-size: 1.2em; margin-bottom: 0.3em;">
+              ${d.title} are a <strong>$${d.moneyMakerAmount.toFixed(2)}</strong> Money Maker
+            </div>
+
+            ${d.productLink ? `<a href="${d.productLink}" target="_blank" rel="noopener noreferrer">Product Link</a>` : ''}
+
+            ${d.image ? `<div><img src="${d.image}" alt="${d.title}" style="max-width: 200px; margin: 10px 0;" onerror="this.style.display='none'"></div>` : ''}
+
+            <ul class="deal-breakdown">
+              ${d.breakdown.map(line => `<li>${line.includes('$') ? line.replace(/(\$\d+(\.\d+)?)/g, '<strong>$1</strong>') : line}</li>`).join('')}
+            </ul>
+
+            <ul class="deal-notes">
+              ${d.notes.map(note => `<li>${note}</li>`).join('')}
+            </ul>
+          </li>
+        `).join('');
+      })
+      .catch(err => {
+        document.getElementById('storeDealList').innerHTML = `<li>Error loading deals: ${err.message}</li>`;
+        console.error(err);
+      });
   </script>
 </body>
 </html>
