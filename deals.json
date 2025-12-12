@@ -1,20 +1,20 @@
-[
-  {
-    "store": "Walmart",
-    "title": "L'il Critters Vitamins are a $4.56 MoneyMaker when you buy two.",
-    "moneyMaker": true,
-    "status": 0,
-    "dateAdded": "2025-12-11",
-    "productLink": "https://www.walmart.com/ip/L-il-Critters-Gummy-Vites-70-ct/10452256?classType=REGULAR&athbdg=L1100&from=/search",
-    "image": "https://i5.walmartimages.com/seo/L-il-Critters-Gummy-Vites-70-ct_0a855a4f-dbca-4dd5-946a-acdc7997d853.706e75bb3e906a4a670a45e641a94229.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
-    "breakdown": [
-      "Buy 2 for $4.98 each for $9.96 total, $14.56 back on BeFrugal",
-      "5,808 points ($7.26) back on BeFrugal each up to two per month"
-    ],
-    "notes": [
-      "Must trade 100,000 points for $125. Lower point redemptions have a lower return percentage like 20,000 points = $25."
-    ]
-  },
+{
+  "store": "Walmart",
+  "title": "L'il Critters Vitamins",
+  "moneyMakerAmount": 4.56,
+  "productLink": "https://www.walmart.com/ip/L-il-Critters-Gummy-Vites-70-ct/10452256?classType=REGULAR&athbdg=L1100&from=/search",
+  "image": "https://i5.walmartimages.com/seo/L-il-Critters-Gummy-Vites-70-ct_0a855a4f-dbca-4dd5-946a-acdc7997d853.706e75bb3e906a4a670a45e641a94229.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+  "breakdown": [
+    "Buy 2 for $4.98 each for $9.96 total, $14.56 back on BeFrugal",
+    "Original cost is $4.98 each"
+  ],
+  "notes": [
+    "Must trade 100,000 points for $125",
+    "Lower point redemptions have a lower return percentage like 20,000 points will get $25"
+  ],
+  "date": "2025-12-11",
+  "dealCategory": "0MM"
+},
   {
     "store": "Walmart",
     "title": "Rold Gold Selects are a $0.38 Final Cost Deal",
@@ -34,4 +34,3 @@
       "Ibotta and Walmart Cash do not stack with each other."
     ]
   }
-]
