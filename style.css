@@ -73,11 +73,16 @@ button:hover {
   text-decoration: underline;
 }
 .deal-item {
-  margin-bottom: 25px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
 }
-
+.deal-item img {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
 .deal-store {
   font-size: 1.4em;
   font-weight: bold;
