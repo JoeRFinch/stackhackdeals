@@ -1,3 +1,4 @@
+/* Base page styling */
 body {
   font-family: Arial, sans-serif;
   background: #fafafa;
@@ -5,6 +6,7 @@ body {
   color: #222;
 }
 
+/* Header */
 header {
   background: #1e90ff;
   color: white;
@@ -15,9 +17,10 @@ header {
 .tagline {
   font-style: italic;
   color: #d3e8ff;
-  padding-top: 0.5em; /* adjust to taste */
+  padding-top: 0.5em;
 }
 
+/* Colored sections */
 .color-section {
   padding: 1em;
   margin: 1em;
@@ -30,8 +33,25 @@ header {
 .orange { background: #fff3e0; }
 .gray { background: #f0f0f0; }
 
-ul { list-style-type: disc; padding-left: 20px; }
+/* Lists */
+ul { 
+  list-style-type: disc; 
+  padding-left: 20px; 
+}
 
+.deal-breakdown li {
+  margin-left: 20px;
+  list-style-type: square;
+}
+
+.deal-notes li {
+  margin-left: 40px;
+  list-style-type: circle;
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* Text areas + buttons */
 textarea {
   width: 100%;
   height: 80px;
@@ -51,6 +71,8 @@ button {
 button:hover {
   background: #0077e6;
 }
+
+/* Top navigation */
 .topnav {
   position: sticky;
   top: 0;
@@ -72,17 +94,30 @@ button:hover {
 .topnav a:hover {
   text-decoration: underline;
 }
+
+/* CLEAN NEW DEAL LAYOUT */
 .deal-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.deal-wrapper {
   display: flex;
+  gap: 15px;
   align-items: flex-start;
-  gap: 1em;
 }
-.deal-item img {
+
+.deal-left {
+  flex: 1;
+}
+
+.deal-right img {
   max-width: 200px;
-  max-height: 200px;
-  object-fit: contain;
-  flex-shrink: 0;
+  height: auto;
+  display: block;
 }
+
+/* Deal headings */
 .deal-store {
   font-size: 1.4em;
   font-weight: bold;
@@ -91,18 +126,6 @@ button:hover {
 
 .deal-title {
   font-size: 1.2em;
-  margin-left: 10px;
   font-weight: bold;
-}
-
-.deal-breakdown li {
-  margin-left: 20px;
-  list-style-type: square;
-}
-
-.deal-notes li {
-  margin-left: 40px;
-  list-style-type: circle;
-  font-size: 0.9em;
-  color: #444;
+  margin: 4px 0;
 }
