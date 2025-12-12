@@ -17,16 +17,51 @@ function sanitizeHTML(str) {
 function renderDealList(dealArray, containerId, showFullDetails = false) {
   const container = document.getElementById(containerId);
   if (!container) return;
+
   container.innerHTML = dealArray.map(d => `
     <li class="deal-item">
-      <div class="deal-store" style="font-weight:bold; font-size:1.1em;">${sanitizeHTML(d.store)}</div>
-      <div class="deal-title"><strong>${sanitizeHTML(d.title)}</strong></div>
-      ${d.productLink ? `<a href="${d.productLink}" target="_blank" rel="noopener noreferrer">View Product</a>` : ""}
-      ${d.image ? `<div><img src="${d.image}" alt="${sanitizeHTML(d.title)}" style="max-width:200px; margin:5px 0;" onerror="this.style.display='none'"/></div>` : ""}
-      <ul class="deal-breakdown">
-        ${d.breakdown.map(line => `<li>${line.includes('$') ? line.replace(/(\$\d+(\.\d+)?)/g, '<strong>$1</strong>') : sanitizeHTML(line)}</li>`).join("")}
-      </ul>
-      ${showFullDetails ? `<ul class="deal-notes">${d.notes.map(n => `<li>${sanitizeHTML(n)}</li>`).join("")}</ul>` : ""}
+      <div class="deal-wrapper">
+
+        <div class="deal-left">
+          <div class="deal-store" style="font-weight:bold; font-size:1.1em;">
+            ${sanitizeHTML(d.store)}
+          </div>
+
+          <div class="deal-title">
+            <strong>${sanitizeHTML(d.title)}</strong>
+          </div>
+
+          ${d.productLink
+            ? `<a href="${d.productLink}" target="_blank" rel="noopener noreferrer">View Product</a>`
+            : ""
+          }
+
+          <ul class="deal-breakdown">
+            ${d.breakdown.map(line =>
+              `<li>${line.includes('$')
+                ? line.replace(/(\$\d+(\.\d+)?)/g, '<strong>$1</strong>')
+                : sanitizeHTML(line)}</li>`
+            ).join("")}
+          </ul>
+
+          ${showFullDetails
+            ? `<ul class="deal-notes">
+                 ${d.notes.map(n => `<li>${sanitizeHTML(n)}</li>`).join("")}
+               </ul>`
+            : ""
+          }
+        </div>
+
+        <div class="deal-right">
+          ${d.image
+            ? `<img src="${d.image}" alt="${sanitizeHTML(d.title)}"
+                 style="max-width:200px; height:auto; display:block;"
+                 onerror="this.style.display='none'">`
+            : ""
+          }
+        </div>
+
+      </div>
     </li>
   `).join("");
 }
