@@ -1,5 +1,33 @@
 [
   {
+  "store": "Walgreens",
+  "title": "CoverGirl Eye and Face Cosmetics are a $2.82 Money Maker",
+  "moneyMaker": true,
+  "status": 0,
+  "dateAdded": "2025-11-13",
+  "productLink": "https://www.walgreens.com/store/c/covergirl-professional-3-in-1-mascara-curved-brush/ID=prod6247062-product",
+  "image": "",
+  "breakdown": [
+    "CoverGirl Mascara: $6.29",
+    "-$2.00 Walgreens app coupon",
+    "-$4.00 Ibotta rebate",
+    "Final cost: $0.29",
+    "",
+    "CoverGirl Simply Powder Foundation (BOGO 50% off): $2.89",
+    "-$2.00 Walgreens app coupon",
+    "-$4.00 Ibotta rebate",
+    "Net from this item: $3.11 money maker",
+    "",
+    "Combined result: FREE makeup and $2.82 back in real cash"
+  ],
+  "notes": [
+    "Must buy one eye product and one face product to maximize the deal.",
+    "Ibotta rebates are one per product type.",
+    "Walgreens Cash can be used.",
+    "Let me know in the comments if the Ibotta deal has been pulled."
+  ]
+}  
+  {
     "store": "Walmart",
     "title": "L'il Critters Vitamins are a $4.60 MoneyMaker when you buy 2",
     "moneyMaker": true,
